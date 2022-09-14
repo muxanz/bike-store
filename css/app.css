@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;  
+}
+
+:root {
+  --maroon: #42032C;
+  --orange: #D36B00;
+  --beige: #E6D2AA;
+  --bone: #F1EFDC;
+  --grey: #E1E1E1;
+  --white: #FFFFFF;
+  /* --font-main: 'Poppins', sans-serif; */
+}
+
+/* global selectors */
+a {
+  text-decoration: none;
+  color: #000;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%; /*adapt to parent width*/
+  display: block;
+}
+
+
+/* header and navbar */
+.name-site {
+  font-size: 5rem;
+  margin: 5rem 0;
+  text-align: center;
+}
+.name-site span {
+  color: var(--orange);
+}
+.nav-container {
+  border-top: .1rem solid var(--grey);
+}
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* height: 100%; */
+}
+.nav-main a {
+  padding: 2rem;
+  font-size: 1.6rem;
+  display: block;
+  /* height: 1.5rem; */
+}
+.nav-main a:hover {
+  color: var(--white);
+  /* border-left: .1rem solid var(--orange); */
+  background-color: var(--orange);
+}
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+}
+
+/* product categories */
+.categories h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.categories-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.category-item img {
+  border: .1rem solid var(--orange);
+}
+.category-item a {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+.category-item a:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  border-bottom-right-radius: 1rem;
+}
