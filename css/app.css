@@ -275,3 +275,17 @@ img {
   width: 60rem;
   margin: 0 auto;
 }
+
+/* gallery template */
+.gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.gallery img {
+  border: .1rem solid var(--orange);
+  object-fit: cover;
+}
