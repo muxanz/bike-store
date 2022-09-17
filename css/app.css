@@ -64,9 +64,11 @@ img {
   font-weight: 700;
   transition: opacity .3s ease-out;
   text-align: center;
+  border: none;
 }
 .btn:hover {
   opacity: .7;
+  cursor: pointer;
 }
 .max-width {
   max-width: 30rem;
@@ -285,7 +287,48 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
+.gallery a {
+  display: block;
+  transition: box-shadow .3s ease-out;
+}
+.gallery a:hover {
+  box-shadow: 0px 0px 15px 1px var(--orange);
+}
 .gallery img {
   border: .1rem solid var(--orange);
   object-fit: cover;
+}
+
+/* contact template */
+.form {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.form fieldset {
+  border: .1rem solid var(--orange);
+  margin-bottom: 2rem;
+}
+.form legend {
+  background-color: var(--orange);
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: .7rem;
+  margin-bottom: 4rem;
+}
+.field {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.field label {
+  flex-basis: 10rem;
+}
+.field input:not([type="radio"]),
+.field textarea,
+.field select {
+  flex: 1;
+  border: .1rem solid var(--grey);
+  padding: .7rem;
 }
